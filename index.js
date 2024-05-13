@@ -1,10 +1,9 @@
-const aliceBalanceAfter = await aptos.getAccountCoinsData({
-  accountAddress: aliceAddress,
-  minimumLedgerVersion: BigInt(response.version),
-});
-const bobBalanceAfter = await aptos.getAccountCoinsData({
-  accountAddress: bobAddress,
-});
-const sponsorBalanceAfter = await aptos.getAccountCoinsData({
-  accountAddress: sponsorAddress,
-});
+function squareDigits(num) {
+  return parseInt(
+    num
+      .toString()
+      .split("")
+      .map((digit) => digit ** 2)
+      .join(""),
+  );
+}
